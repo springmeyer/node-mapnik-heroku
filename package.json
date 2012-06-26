@@ -32,7 +32,6 @@
   "dependencies"  : {},
   "devDependencies": {
     "mocha": "*",
-    "jshint"  : "~0.5.x"
    },
   "bin"           : {
        "mapnik-inspect.js" : "./bin/mapnik-inspect.js",
@@ -44,8 +43,6 @@
    },
   "engines"       : { "node": ">=0.6.0" },
   "scripts"       : {
-      "install" : "node-waf -v configure build",
-      "pretest" : "npm install --dev",
       "test"    : "make test"
    }
 }
