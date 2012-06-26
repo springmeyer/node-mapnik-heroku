@@ -6,6 +6,9 @@ This repo stores 64bit standalone binaries for heroku (Ubuntu Lucide LTS).
 
 To set them up do:
 
+    sudo apt-add-repository ppa:chris-lea/node.js
+    sudo apt-get update
+    sudo apt-get install nodejs npm
     git clone https://github.com/springmeyer/node-mapnik-heroku.git
     cd node-mapnik-heroku
     export LD_LIBRARY_PATH=`pwd`/lib
