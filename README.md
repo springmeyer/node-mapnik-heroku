@@ -2,7 +2,7 @@
       
 Bindings to [Mapnik](http://mapnik.org) for [node](http://nodejs.org).
 
-This repo stores 64bit standalone binaries for heroku.
+This repo stores 64bit standalone binaries for heroku (Ubuntu Lucide LTS).
 
 To set them up do:
 
