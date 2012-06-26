@@ -41,7 +41,7 @@
        "examples" : "examples",
        "src": "src"
    },
-  "engines"       : { "node": ">=0.6.0" },
+  "engines"       : { "node": "0.6.x" },
   "scripts"       : {
       "test"    : "make test"
    }
