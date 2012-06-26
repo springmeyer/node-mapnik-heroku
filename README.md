@@ -9,7 +9,21 @@ To set them up do:
     git clone https://github.com/springmeyer/node-mapnik-heroku.git
     cd node-mapnik-heroku
     export LD_LIBRARY_PATH=`pwd`/lib
-    make test
 
+Test require:
+
+    # local
+    node -e "require('./lib/mapnik')"
+    # global
+    export NODE_PATH=./lib
+    node -e "require('mapnik')"
+
+
+Note: if you need fancy projections support, support for Unicode string expressions,
+or support for bundled Unifont use the `unicode-and-projections` branch.
+
+If running the `unicode-and-projections` branch then all tests should pass if you do:
+
+    make test
 
 See https://github.com/mapnik/node-mapnik for more details about node-mapnik.
