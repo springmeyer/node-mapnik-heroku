@@ -31,7 +31,7 @@
   ],
   "dependencies"  : {},
   "devDependencies": {
-    "mocha": "*",
+    "mocha": "*"
    },
   "bin"           : {
        "mapnik-inspect.js" : "./bin/mapnik-inspect.js",
