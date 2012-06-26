@@ -1,0 +1,51 @@
+{
+  "name"          : "mapnik",
+  "description"   : "Tile rendering library for node",
+  "url"           : "http://github.com/mapnik/node-mapnik",
+  "homepage"      : "http://mapnik.org",
+  "author"        : "Dane Springmeyer <dane@dbsgeo.com> (mapnik.org)",
+  "version"       : "0.7.1",
+  "main"          : "./lib/mapnik.js",
+  "bugs"          : {
+    "email" : "dane@dbsgeo.com",
+    "url"   : "http://github.com/mapnik/node-mapnik/issues"
+  },
+  "keywords"      : [
+      "map",
+      "graphics",
+      "canvas",
+      "tile",
+      "mapnik",
+      "carto"
+  ],
+  "repository"   :  {
+           "type" : "git",
+           "url"  : "git://github.com/mapnik/node-mapnik.git"
+  },
+  "contributors"  : ["Konstantin Käfer"],
+  "licenses"      : [
+      {
+        "type": "BSD",
+        "url": "https://github.com/mapnik/node-mapnik/blob/master/LICENSE.txt"
+      }
+  ],
+  "dependencies"  : {},
+  "devDependencies": {
+    "mocha": "*",
+    "jshint"  : "~0.5.x"
+   },
+  "bin"           : {
+       "mapnik-inspect.js" : "./bin/mapnik-inspect.js",
+       "mapnik-render.js"  : "./bin/mapnik-render.js"
+   },
+   "directories"  : {
+       "examples" : "examples",
+       "src": "src"
+   },
+  "engines"       : { "node": ">=0.6.0" },
+  "scripts"       : {
+      "install" : "node-waf -v configure build",
+      "pretest" : "npm install --dev",
+      "test"    : "make test"
+   }
+}
